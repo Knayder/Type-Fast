@@ -3,7 +3,8 @@
 Application::Application() :
 	window(sf::VideoMode(1280, 720), "Type Fast")
 {
-	stateManager.push(std::make_unique<GameState>(sf::Color(37, 37, 48)));
+	stateManager.push(std::make_unique<GameState>(sf::Color(137, 137, 148)));
+
 }
 
 void Application::run() {
