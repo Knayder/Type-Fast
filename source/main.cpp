@@ -1,6 +1,7 @@
 #include <SFML\Graphics.hpp>
-
+#include "Application.h"
 int main() {
-	sf::CircleShape shape(50.f);
+	Application app;
+	app.run();
 	return 0;
 }
