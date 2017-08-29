@@ -6,6 +6,7 @@ public:
 	InputManager(StateManager *stateManager, sf::RenderWindow *window);
 
 	void handleInputs();
+
 private:
 	StateManager *stateManager;
 	sf::RenderWindow *window;

@@ -7,6 +7,7 @@ InputManager::InputManager(StateManager *stateManager, sf::RenderWindow *window)
 
 }
 
+
 void InputManager::handleInputs() {
 	sf::Event event;
 	while(window->pollEvent(event)) {
@@ -14,5 +15,6 @@ void InputManager::handleInputs() {
 			window->close();
 
 		stateManager->input(event);
+
 	}
 }
