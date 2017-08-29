@@ -22,11 +22,6 @@ void StateManager::display(sf::RenderTarget &target) {
 	target.draw( *states.top().get() );
 }
 
-void StateManager::input(sf::RenderWindow &window) {
-	sf::Event event;
-	while(window.pollEvent(event)) {
-		if(event.type == sf::Event::Closed)
-			window.close();
-		states.top().get()->input(event);
-	}
+void StateManager::input(const sf::Event &event) {
+	states.top()->input(event);
 }

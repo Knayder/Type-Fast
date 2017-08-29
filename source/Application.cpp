@@ -1,7 +1,8 @@
 #include "Application.h"
 
 Application::Application() :
-	window(sf::VideoMode(1280, 720), "Type Fast")
+	window(sf::VideoMode(1280, 720), "Type Fast"),
+	inputManager(&stateManager, &window)
 {
 	stateManager.push(std::make_unique<GameState>(sf::Color(137, 137, 148)));
 	//do something
@@ -9,7 +10,9 @@ Application::Application() :
 
 void Application::run() {
 	while(window.isOpen()) {
-		stateManager.input(window);
+		
+
+		inputManager.handleInputs(window);
 		stateManager.display(window);
 		window.display();
 	}
