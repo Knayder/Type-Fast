@@ -12,7 +12,7 @@ public:
 	void replace(std::unique_ptr<State> object);
 
 	void display(sf::RenderTarget &target);
-	void input(sf::RenderWindow &window);
+	void input(const sf::Event &event);
 
 private:
 	std::stack<std::unique_ptr<State>> states;
