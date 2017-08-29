@@ -11,6 +11,7 @@ public:
 	void pop();
 	void replace(std::unique_ptr<State> object);
 
+	void update(const float &deltaTime);
 	void display(sf::RenderTarget &target);
 	void input(const sf::Event &event);
 

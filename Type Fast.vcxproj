@@ -149,6 +149,7 @@
     <ClCompile Include="source\Application.cpp" />
     <ClCompile Include="source\InputManager.cpp" />
     <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\Settings.cpp" />
     <ClCompile Include="source\State\StateManager.cpp" />
     <ClCompile Include="source\State\States\GameState.cpp" />
     <ClCompile Include="source\Test.cpp" />
@@ -156,6 +157,7 @@
   <ItemGroup>
     <ClInclude Include="source\Application.h" />
     <ClInclude Include="source\InputManager.h" />
+    <ClInclude Include="source\Settings.h" />
     <ClInclude Include="source\State\State.h" />
     <ClInclude Include="source\State\StateManager.h" />
     <ClInclude Include="source\State\States\GameState.h" />

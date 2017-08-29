@@ -5,6 +5,7 @@ class GameState : public State {
 public:
 	GameState(const sf::Color &color);
 	virtual void input(const sf::Event &event) override;
+	virtual void update(const float &deltaTime) override;
 private:
 	sf::Color bgColor;
 

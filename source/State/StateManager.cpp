@@ -25,3 +25,7 @@ void StateManager::display(sf::RenderTarget &target) {
 void StateManager::input(const sf::Event &event) {
 	states.top()->input(event);
 }
+
+void StateManager::update(const float &deltaTime) {
+	states.top().get()->update(deltaTime);
+}
