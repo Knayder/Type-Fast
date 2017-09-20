@@ -2,7 +2,7 @@
 #include <memory>
 #include <SFML\Graphics.hpp>
 #include "State\StateManager.h"
-#include "State\States\GameState.h"
+#include "State\States\Game\GameState.h"
 #include "InputManager.h"
 #include "Settings.h"
 class Application {

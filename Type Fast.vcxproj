@@ -71,9 +71,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <CodeAnalysisRuleSet>D:\Aplikacje\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\Rule Sets\NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <EnableExperimentalCppCoreCheck>true</EnableExperimentalCppCoreCheck>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <EnableCppCoreCheck>false</EnableCppCoreCheck>
+    <EnableExperimentalCppCoreCheck>false</EnableExperimentalCppCoreCheck>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <CodeAnalysisRuleSet>D:\Aplikacje\Microsoft Visual Studio\2017\Community\Team Tools\Static Analysis Tools\Rule Sets\NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -98,7 +98,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <EnablePREfast>true</EnablePREfast>
+      <EnablePREfast>false</EnablePREfast>
       <AdditionalIncludeDirectories>.\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -151,7 +151,9 @@
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\Settings.cpp" />
     <ClCompile Include="source\State\StateManager.cpp" />
-    <ClCompile Include="source\State\States\GameState.cpp" />
+    <ClCompile Include="source\State\States\Game\Components\Word.cpp" />
+    <ClCompile Include="source\State\States\Game\Components\WordsContainer.cpp" />
+    <ClCompile Include="source\State\States\Game\GameState.cpp" />
     <ClCompile Include="source\Test.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -160,7 +162,9 @@
     <ClInclude Include="source\Settings.h" />
     <ClInclude Include="source\State\State.h" />
     <ClInclude Include="source\State\StateManager.h" />
-    <ClInclude Include="source\State\States\GameState.h" />
+    <ClInclude Include="source\State\States\Game\Components\Word.h" />
+    <ClInclude Include="source\State\States\Game\Components\WordsContainer.h" />
+    <ClInclude Include="source\State\States\Game\GameState.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
