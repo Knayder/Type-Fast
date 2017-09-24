@@ -4,7 +4,7 @@
 class Word : public sf::Text {
 public:
 	Word(const std::string &text, sf::Font &font);
-	inline std::string getString();
+	std::string getString();
 private:
 
 };

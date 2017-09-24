@@ -151,6 +151,8 @@
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\Settings.cpp" />
     <ClCompile Include="source\State\StateManager.cpp" />
+    <ClCompile Include="source\State\States\Game\Components\Dictionary.cpp" />
+    <ClCompile Include="source\State\States\Game\Components\RandomEngine.cpp" />
     <ClCompile Include="source\State\States\Game\Components\Word.cpp" />
     <ClCompile Include="source\State\States\Game\Components\WordsContainer.cpp" />
     <ClCompile Include="source\State\States\Game\GameState.cpp" />
@@ -162,6 +164,8 @@
     <ClInclude Include="source\Settings.h" />
     <ClInclude Include="source\State\State.h" />
     <ClInclude Include="source\State\StateManager.h" />
+    <ClInclude Include="source\State\States\Game\Components\Dictionary.h" />
+    <ClInclude Include="source\State\States\Game\Components\RandomEngine.h" />
     <ClInclude Include="source\State\States\Game\Components\Word.h" />
     <ClInclude Include="source\State\States\Game\Components\WordsContainer.h" />
     <ClInclude Include="source\State\States\Game\GameState.h" />
